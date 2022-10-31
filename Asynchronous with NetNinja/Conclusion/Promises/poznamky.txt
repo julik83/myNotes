@@ -1,0 +1,3 @@
+//callback with XMLHttprequest or add is asynchroneous, itself is not
+
+!!!!//Promise it self is asynchronous

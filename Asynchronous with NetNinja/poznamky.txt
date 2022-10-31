@@ -1,0 +1,13 @@
+callbacks 
+main function takes param(resource/can put the url directly to request.open) , callback)
+podmienkujeme if (readystate 4 && stat 4)
+vyzera to ako keby callback ani nebol potrebny, mozeme tie f zapisat rovno do main f , callback je mozno potrebny len vtedy ked potrebujeme chainovat funkcie a to je hell
+
+
+promise
+main function takes param(resource, can put the url directly to request.open)
+podmienkujeme tiez if ale telo main function zacina "return new Promise" ta ma automaticky priradene dva param funkcie/metody (resolve, reject) preto potom nevolame callback ale volame tieto. Inak je telo totozne ako pri callbackoch
+potom ju volame + .then metoda berie dva parametre funkcie prvy je volany v pripade uplatnenia resolve druhy je volany v pripade reject)  
+    avsak namiesto druheho parametra volame .catch 
+do ktoreho zapiseme funciu parameter ktory sa ma uplatnit v pripade reject.
+
